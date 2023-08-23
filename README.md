@@ -21,7 +21,7 @@ otherwise any value in the range `[0-9]`.
 ```caddyfile
 :80 {
     encode deflate
-    respond "guhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguh"
+    file_server
 }
 ```
 
@@ -31,7 +31,8 @@ or
 :80 {
     # Use multiple compressors
     encode deflate gzip zstd
-    respond "guhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguh"
+
+    file_server
 }
 ```
 
@@ -46,6 +47,7 @@ or
         # Configure another backup compressor
         gzip
     }
-    respond "guhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguhguh"
+
+    file_server
 }
 ```
