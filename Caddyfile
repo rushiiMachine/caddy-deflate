@@ -2,10 +2,7 @@
   debug
 }
 
-:2020 {
+:8080 {
     encode deflate gzip zstd
-    reverse_proxy example.com {
-        rewrite /
-        header_up -*
-    }
+    file_server
 }

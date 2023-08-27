@@ -1,7 +1,9 @@
 # caddy-deflate
 
-A caddy plugin that adds a [deflate](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Encoding)
-compression encoder for caddy.
+A caddy plugin that adds support for HTTP's `Accept-Encoding: deflate` for caddy.
+
+**Note:** This follows the official definition for http `deflate`, that being a deflate stream wrapped with zlib, not a
+raw deflate stream! (many implementations have made this mistake)
 
 ## Building with xcaddy
 
