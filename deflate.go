@@ -1,4 +1,4 @@
-package caddy_decompress
+package caddy_deflate
 
 import (
 	"fmt"
